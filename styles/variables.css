@@ -2,3 +2,45 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  /* dark theme first */
+  --background-image: url(/images/cover-image.png);
+  --page-background-color: #000028;
+  --theme-menu-color: #ff0070;
+  --rec-element-color: #ff0070;
+  --title-color: #db00ff;
+  --title-shadow-color: #ff0070;
+  --subtitle-background-color: #ff0070;
+  --subtitle-text-color: #000028;
+  --article-title-color: #ff0070;
+  --article-text-color: #f1b2ce;
+  --link-shadow-color: #ff0070;
+
+  --font-family: "IBM Plex Mono", ui-monospace, "Courier New", Courier,
+    monospace;
+
+  --title-text-shadow: 4px 4px 0 var(--title-shadow-color);
+  --link-text-shadow: 2px 2px 0 var(--link-shadow-color);
+
+  --title-line-height: 82.5%;
+  --content-line-height: 130%;
+  --menu-items-line-height: 100%;
+
+  /* mobile first */
+  --text-lg: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --text-sm: 1.125rem;
+
+  --page-margin: 10px;
+  --page-margin-lg: calc(var(--page-margin) + 10px);
+  --section-gap-hero: 40px;
+  --section-gap: 50px;
+
+  --button-padding-x: 0.81rem;
+  --button-border: 1px solid currentColor;
+  --button-border-faded: 1px solid rgb(from var(--theme-menu-color) r g b / 0.4);
+
+  --decorative-border-margin: 19px;
+  --decorative-border-width: 25px;
+
+  --section-content-gap: 20px;
+}
