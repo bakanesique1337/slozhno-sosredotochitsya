@@ -4,7 +4,7 @@
 */
 :root {
   /* dark theme first */
-  --background-image: url(/images/cover-image.png);
+  --background-image: url(/images/cover-image-dark.png);
   --page-background-color: #000028;
   --theme-menu-color: #ff0070;
   --rec-element-color: #ff0070;
@@ -32,8 +32,8 @@
 
   --page-margin: 10px;
   --page-margin-lg: calc(var(--page-margin) + 10px);
-  --section-gap-hero: 40px;
-  --section-gap: 50px;
+  --main__section-gap-hero: 40px;
+  --main__section-gap: 50px;
 
   --button-padding-x: 0.81rem;
   --button-border: 1px solid currentColor;
@@ -42,5 +42,5 @@
   --decorative-border-margin: 19px;
   --decorative-border-width: 25px;
 
-  --section-content-gap: 20px;
+  --main__section-content-gap: 20px;
 }

@@ -20,29 +20,76 @@
   --article-text-color: #353430;
   --link-shadow-color: #ff8dcb;
 
+  --font-family: "IBM Plex Mono", ui-monospace, "Courier New", Courier,
+    monospace;
+
   --title-text-shadow: 4px 4px 0 var(--title-shadow-color);
   --link-text-shadow: 2px 2px 0 var(--link-shadow-color);
 
   --button-border-faded: 1px solid rgb(from var(--theme-menu-color) r g b / 0.4);
+
+  --title-line-height: 82.5%;
+  --content-line-height: 130%;
+  --menu-items-line-height: 100%;
+
+  /* mobile first */
+  --text-lg: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --text-sm: 1.125rem;
+
+  --page-margin: 10px;
+  --page-margin-lg: calc(var(--page-margin) + 10px);
+  --main__section-gap-hero: 40px;
+  --main__section-gap: 50px;
+
+  --button-padding-x: 0.81rem;
+  --button-border: 1px solid currentColor;
+
+  --decorative-border-margin: 19px;
+  --decorative-border-width: 25px;
+
+  --main__section-content-gap: 20px;
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
+  .page {
     /* Дублируем переменные светлой темы */
     --background-image: url(/images/cover-image-light.png);
     --page-background-color: #fff1f7;
     --theme-menu-color: #353430;
+    --rec-element-color: transparent;
     --title-color: #ffc2e6;
     --title-shadow-color: #ff0070;
     --subtitle-background-color: #ff8dcb;
     --subtitle-text-color: #353430;
     --article-title-color: #353430;
     --article-text-color: #353430;
+    --link-shadow-color: #ff8dcb;
 
     --title-text-shadow: 4px 4px 0 var(--title-shadow-color);
-    --link-text-shadow: 2px 2px 0 var(--subtitle-text-color);
+    --link-text-shadow: 2px 2px 0 var(--link-shadow-color);
 
     --button-border-faded: 1px solid
       rgb(from var(--theme-menu-color) r g b / 0.4);
+
+    --title-line-height: 82.5%;
+    --content-line-height: 130%;
+    --menu-items-line-height: 100%;
+
+    /* mobile first */
+    --text-lg: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --text-sm: 1.125rem;
+
+    --page-margin: 10px;
+    --page-margin-lg: calc(var(--page-margin) + 10px);
+    --main__section-gap-hero: 40px;
+    --main__section-gap: 50px;
+
+    --button-padding-x: 0.81rem;
+    --button-border: 1px solid currentColor;
+
+    --decorative-border-margin: 19px;
+    --decorative-border-width: 25px;
+
+    --main__section-content-gap: 20px;
   }
 }
