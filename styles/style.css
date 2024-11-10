@@ -102,6 +102,7 @@
   background-color: transparent;
   border: none;
 }
+
 .header__theme-menu-button:focus {
   appearance: none;
 }
